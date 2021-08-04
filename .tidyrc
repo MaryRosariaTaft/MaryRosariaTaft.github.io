@@ -1,0 +1,13 @@
+// See full set of configuration options here:
+// https://api.html-tidy.org/tidy/quickref_5.8.0.html
+
+hide-comments: yes
+
+break-before-br: yes
+indent: auto
+indent-spaces: 2
+wrap: 100
+
+quiet: yes
+show-info: no
+show-warnings: no
