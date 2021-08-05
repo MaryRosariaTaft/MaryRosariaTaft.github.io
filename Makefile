@@ -1,9 +1,9 @@
 build: clean
-	ejs ejs/pages/index.ejs -o index.html
-	ejs ejs/pages/piano.ejs -o piano.html
-	ejs ejs/pages/ballroom.ejs -o ballroom.html
-	ejs ejs/pages/drawing.ejs -o drawing.html
-	ejs ejs/pages/contact.ejs -o contact.html
+	ejs ejs/pages/index.ejs -f ejs/data/common.json -o index.html
+	ejs ejs/pages/piano.ejs -f ejs/data/common.json -o piano.html
+	ejs ejs/pages/ballroom.ejs -f ejs/data/common.json -o ballroom.html
+	ejs ejs/pages/drawing.ejs -f ejs/data/common.json -o drawing.html
+	ejs ejs/pages/contact.ejs -f ejs/data/common.json -o contact.html
 	tidy -config .tidyrc -o index.html index.html
 	tidy -config .tidyrc -o piano.html piano.html
 	tidy -config .tidyrc -o ballroom.html ballroom.html

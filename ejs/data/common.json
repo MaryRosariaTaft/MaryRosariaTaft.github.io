@@ -1,0 +1,9 @@
+{
+    "NAME": "Mary R. Taft",
+    "HOME": "Home",
+    "PIANO": "Piano",
+    "BALLROOM": "Ballroom",
+    "DRAWING": "Drawing",
+    "CONTACT": "Contact",
+    "pageTitles": ["Home", "Piano", "Ballroom", "Drawing", "Contact"]
+}
