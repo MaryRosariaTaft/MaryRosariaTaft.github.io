@@ -1,36 +1,33 @@
 <header>
     <nav class="rose" role="navigation">
       <div class="nav-wrapper container">
-        <a id="logo-container" href="/" class="brand-logo">Mary R. Taft</a>
+        <a id="logo-container-desktop" href="/" class="brand-logo hide-on-med-and-down"><%= NAME %></a>
+        <div id="logo-container-mobile" class="brand-logo hide-on-large-only"><%= NAME %></div>
 
-        <% //TODO: add constants for the page titles; generate menus iteratively %>
-
-        <ul class="right hide-on-med-and-down">
-          <li class="<%= title === 'Contact' ? 'mint darken' : '' %>"><a href="/contact">Contact</a></li>
-        </ul>
-        <ul class="right hide-on-med-and-down">
-          <li class="<%= title === 'Drawing' ? 'mint darken' : '' %>"><a href="/drawing">Drawing</a></li>
-        </ul>
-        <ul class="right hide-on-med-and-down">
-          <li class="<%= title === 'Ballroom' ? 'mint darken' : '' %>"><a href="/ballroom">Ballroom</a></li>
-        </ul>
-        <ul class="right hide-on-med-and-down">
-          <li class="<%= title === 'Piano' ? 'mint darken' : '' %>"><a href="/piano">Piano</a></li>
-        </ul>
-        <ul class="right hide-on-med-and-down">
-          <li class="<%= title === 'Home' ? 'mint darken' : '' %>"><a href="/">Home</a></li>
-        </ul>
+        <% pageTitles.slice().reverse().forEach(function(pageTitle) { %>
+          <ul class="right hide-on-med-and-down">
+            <li class="<%= title === pageTitle ? 'mint darken' : '' %>">
+              <a href="<%= pageTitle === HOME ? '/' : '/' + pageTitle.toLowerCase() %>">
+                <%= pageTitle %>
+              </a>
+            </li>
+          </ul>
+        <% }); %>
 
         <ul id="nav-mobile" class="sidenav">
-          <li><a class="<%= title === 'Home' ? 'mint-text darken' : '' %>" href="/">Home</a></li>
-          <li><a class="<%= title === 'Piano' ? 'mint-text darken' : '' %>" href="/piano">Piano</a></li>
-          <li><a class="<%= title === 'Ballroom' ? 'mint-text darken' : '' %>" href="/ballroom">Ballroom</a></li>
-          <li><a class="<%= title === 'Drawing' ? 'mint-text darken' : '' %>" href="/drawing">Drawing</a></li>
-          <li><a class="<%= title === 'Contact' ? 'mint-text darken' : '' %>"href="/contact">Contact</a></li>
+          <% pageTitles.forEach(function(pageTitle) { %>
+            <li>
+              <a class="<%= title === pageTitle ? 'mint-text darken' : '' %>"
+                 href="<%= pageTitle === HOME ? '/' : '/' + pageTitle.toLowerCase() %>">
+                <%= pageTitle %>
+              </a>
+            </li>
+          <% }); %>
         </ul>
         <a href="/" data-target="nav-mobile" class="sidenav-trigger">
           <i class="material-icons">menu</i>
         </a>
+
       </div>
     </nav>
 </header>
