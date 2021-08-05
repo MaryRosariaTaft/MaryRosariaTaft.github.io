@@ -8,6 +8,25 @@
   font-size: inherit;
 }
 
+.icon-test {
+  height: 1px;
+}
+
+.icon-square {
+  height: 1em;
+  width: 1em;
+  margin: 0px 5px;
+  filter: brightness(0) invert(1);
+}
+
+.icon-linkedin {
+  height: 1em;
+  width: 1.176em;
+  margin-left: 5px;
+  margin-right: 5px;
+  filter: brightness(0) invert(1);
+}
+
 body {
   display: flex;
   min-height: 100vh;
