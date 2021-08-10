@@ -1,0 +1,14 @@
+<!-- TODO: maybe create a `contentCard` partial and "extend" it for embedded videos AND images AND etc. -->
+<!-- TODO: hmmm... this probably shouldn't have the `col` class. create a wrapper that generates the whole grid,
+           so the includer of THAT partial doesn't need to remember to wrap a series of THESE videoCards with `row` -->
+<!-- TODO: (yet another...) potentially, instead of having these cards play the youtube videos directly,
+      they can pull up a modal with some description (e.g., song name, date performed, etc.) on the side or bottom -->
+
+<div class="col s12 m6 xl4">
+  <div class="card mint darken">
+    <div class="video-container">
+      <iframe src="<%= src %>" title="<%= title %>" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div>
