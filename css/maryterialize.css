@@ -3490,7 +3490,7 @@ table span.badge {
   width: 90%;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 776) {
   .container {
     width: 85%;
   }
@@ -3776,7 +3776,7 @@ table span.badge {
   left: 100%;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 776px) {
   .row .col.m1 {
     width: 8.3333333333%;
     margin-left: auto;
@@ -4142,7 +4142,7 @@ table span.badge {
   }
 }
 
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1401px) {
   .row .col.xl1 {
     width: 8.3333333333%;
     margin-left: auto;
