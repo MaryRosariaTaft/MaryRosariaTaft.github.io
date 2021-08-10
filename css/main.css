@@ -1,5 +1,9 @@
 /* Custom Stylesheet */
 
+/* TODO, maybe: actually use the 'materialize.css' and do all customization here.. unlike my initial attempt at styling */
+
+/* ICONS */
+
 .icon-block {
   padding: 0 15px;
 }
@@ -26,6 +30,24 @@
   margin-right: 5px;
   filter: brightness(0) invert(1);
 }
+
+
+/* FONTS */
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.brand-logo {
+  font-family: 'Libre Baskerville', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+
+/* GENERAL */
 
 body {
   display: flex;
