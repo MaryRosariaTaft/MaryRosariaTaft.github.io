@@ -1,9 +1,42 @@
 {
-    "NAME": "Mary R. Taft",
-    "HOME": "Home",
-    "PIANO": "Piano",
-    "BALLROOM": "Ballroom",
-    "DRAWING": "Drawing",
-    "CONTACT": "Contact",
-    "pageTitles": ["Home", "Piano", "Ballroom", "Drawing", "Contact"]
+  "NAME": "Mary R. Taft",
+  "HOME": "Home",
+  "PIANO": "Piano",
+  "BALLROOM": "Ballroom",
+  "DRAWING": "Drawing",
+  "CONTACT": "Contact",
+  "pageTitles": [
+    "Home",
+    "Piano",
+    "Ballroom",
+    "Drawing",
+    "Contact"
+  ],
+  "pianoVideos": [],
+  "ballroomVideos": [
+    {
+      "title": "La Vida Es Un Carnaval",
+      "embedLink": "https://www.youtube-nocookie.com/embed/IoL9ePv_KJc"
+    },
+    {
+      "title": "If I Fell",
+      "embedLink": "https://www.youtube-nocookie.com/embed/F7e3B64p6IE"
+    },
+    {
+      "title": "7 Rings",
+      "embedLink": "https://www.youtube-nocookie.com/embed/MTKQfgB0pI0"
+    },
+    {
+      "title": "Smooth Operator",
+      "embedLink": "https://www.youtube-nocookie.com/embed/T_4R-HtbCHo"
+    },
+    {
+      "title": "You Make Me Feel So Young",
+      "embedLink": "https://www.youtube-nocookie.com/embed/R2TtygMFEqs"
+    },
+    {
+      "title": "Rie y Llora",
+      "embedLink": "https://www.youtube-nocookie.com/embed/yMYIYsKbLLg"
+    }
+  ]
 }

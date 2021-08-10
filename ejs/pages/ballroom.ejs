@@ -14,13 +14,9 @@
       <div class="section">
         <!-- TODO: refactor this block as needed after updating the `videoCard` partial -->
         <div class="row">
-          <!-- TODO: instead of manually calling this 6 times, make a JSON data file with the params and, here, iterate through them. -->
-          <%- include('ejs/partials/videoCard', {title: "La Vida Es Un Carnaval", src: "https://www.youtube-nocookie.com/embed/IoL9ePv_KJc"}); %>
-          <%- include('ejs/partials/videoCard', {title: "If I Fell", src: "https://www.youtube-nocookie.com/embed/F7e3B64p6IE"}); %>
-          <%- include('ejs/partials/videoCard', {title: "7 Rings", src: "https://www.youtube-nocookie.com/embed/MTKQfgB0pI0"}); %>
-          <%- include('ejs/partials/videoCard', {title: "Smooth Operator", src: "https://www.youtube-nocookie.com/embed/T_4R-HtbCHo"}); %>
-          <%- include('ejs/partials/videoCard', {title: "You Make Me Feel So Young", src: "https://www.youtube-nocookie.com/embed/R2TtygMFEqs"}); %>
-          <%- include('ejs/partials/videoCard', {title: "Rie y Llora", src: "https://www.youtube-nocookie.com/embed/yMYIYsKbLLg"}); %>
+          <% ballroomVideos.forEach(function(video) { %>
+            <%- include('ejs/partials/videoCard', {title: video.title, src: video.embedLink}); %>
+          <% }); %>
         </div>
       </div>
       <br><br>
