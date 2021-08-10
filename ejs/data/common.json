@@ -12,7 +12,72 @@
     "Drawing",
     "Contact"
   ],
-  "pianoVideos": [],
+  "pianoVideos": [
+    {
+      "title": "\"Ständchen\" by Franz Schubert, arr. Franz Liszt",
+      "embedLink": "https://www.youtube-nocookie.com/embed/CHhCHVvXUHs"
+    },
+    {
+      "title": "The Seasons, Op. 37b, Mvt. 2, February: \"Carnival\" by Pyotr Ilyich Tchaikovsky",
+      "embedLink": "https://www.youtube-nocookie.com/embed/N01Ya0nM6SE"
+    },
+    {
+      "title": "Waltz in A-flat Major, Op. 69, No. 1 by Frédéric Chopin",
+      "embedLink": "https://www.youtube-nocookie.com/embed/ZQ3-3gGZRk4"
+    },
+    {
+      "title": "Waltz in C# minor, Op. 64, No. 2 by Frédéric Chopin",
+      "embedLink": "https://www.youtube-nocookie.com/embed/cGZlhtc2VZE"
+    },
+    {
+      "title": "Piano Sonata in G minor, Mvt. 4, Rondo: Allegrissimo by Wilhelm Stenhammar",
+      "embedLink": "https://www.youtube-nocookie.com/embed/vUUjbkft3qQ"
+    },
+    {
+      "title": "The Nutcracker, Op. 71a, Nos. 1 & 2 by P. Tchaikovsky (arr. M. Pletnev)",
+      "embedLink": "https://www.youtube-nocookie.com/embed/IGqO2ObbHxc"
+    },
+    {
+      "title": "Impromptu in G-flat, Op. 90, No. 3 by Franz Schubert",
+      "embedLink": "https://www.youtube-nocookie.com/embed/vYtFpx7g3_c"
+    },
+    {
+      "title": "Sonata No. 3 in A minor, Op. 28 by Sergei Prokofiev",
+      "embedLink": "https://www.youtube-nocookie.com/embed/kZR-dnTV3Tc"
+    },
+    {
+      "title": "\"Raindrop\" Prelude in D-flat, Op. 28, No. 15 by Frédéric Chopin",
+      "embedLink": "https://www.youtube-nocookie.com/embed/W5fG76ptr1Q"
+    },
+    {
+      "title": "Prelude in G minor, Op. 23, No. 5 by Sergei Rachmaninoff",
+      "embedLink": "https://www.youtube-nocookie.com/embed/qyzvKb186eE"
+    },
+    {
+      "title": "Kinderszenen (\"Scenes from Childhood\"), Op. 15 by Robert Schumann",
+      "embedLink": "https://www.youtube-nocookie.com/embed/Aq-orNOY964"
+    },
+    {
+      "title": "Prelude No. 1 in B-flat Major by George Gershwin",
+      "embedLink": "https://www.youtube-nocookie.com/embed/MYrZwrawIqY"
+    },
+    {
+      "title": "French Suite No. 5 in G Major, BWV 816 by J.S. Bach",
+      "embedLink": "https://www.youtube-nocookie.com/embed/1_zktaO1rIg"
+    },
+    {
+      "title": "Papillons, Op. 2 by Robert Schumann",
+      "embedLink": "https://www.youtube-nocookie.com/embed/xAdWWYOlm9I"
+    },
+    {
+      "title": "\"Tempest\" Sonata in D Minor, Op. 31, No. 2, Mvt. III by Ludwig van Beethoven",
+      "embedLink": "https://www.youtube-nocookie.com/embed/lhrd2YdjYLg"
+    },
+    {
+      "title": "Italian Concerto in F Minor, BWV 971, Mvt. II by J.S. Bach",
+      "embedLink": "https://www.youtube-nocookie.com/embed/qHFMU6tg32E"
+    }
+  ],
   "ballroomVideos": [
     {
       "title": "La Vida Es Un Carnaval",
