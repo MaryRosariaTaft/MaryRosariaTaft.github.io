@@ -9,7 +9,6 @@
 
   <main>
     <%- include('ejs/partials/sectionIntro', {title: DRAWING, introText: ""}); %>
-    <br>
     <div class="row">
       <% drawings.forEach(function(category) { %>
         <h5 class="center"><%= category.medium %></h5>

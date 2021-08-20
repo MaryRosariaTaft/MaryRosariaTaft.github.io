@@ -8,64 +8,9 @@
   <%- include('ejs/partials/header', {title: HOME}); %>
 
   <main>
-    <div class="section no-pad-bot" id="index-banner">
-      <div class="container">
-        <br><br>
-        <h1 class="header center mint-text darken">Hello!</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">
-            I should add a headshot and a short bio here!
-            <br>
-            Or panels previewing and navigating to the other pages.
-          </h5>
-        </div>
-        <br>
-
-      </div>
-    </div>
-
-
-    <div class="container">
-      <div class="section">
-
-        <div class="row">
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center rose-text"><i class="material-icons">piano</i></h2>
-              <h5 class="center">Piano</h5>
-
-              <p class="light">Sed viverra ac ligula hendrerit egestas. Aliquam commodo velit pretium quam consectetur
-                auctor. Duis dapibus suscipit porta. Donec sagittis, sapien eu porttitor congue, ante augue consectetur
-                risus, quis lacinia metus ligula ut libero.</p>
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center rose-text"><i class="material-icons">nightlife</i></h2>
-              <h5 class="center">Ballroom</h5>
-
-              <p class="light">Cras volutpat euismod lectus vitae lacinia. Sed non fringilla nulla, vitae cursus arcu.
-                Sed eu feugiat sem, in lobortis tellus. Donec imperdiet risus eget ipsum efficitur, a viverra tellus
-                placerat. Ut eget diam eu risus condimentum ultrices. Nullam eget turpis vitae nisi sagittis semper et
-                ut urna.</p>
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center rose-text"><i class="material-icons">brush</i></h2>
-              <h5 class="center">Drawing</h5>
-
-              <p class="light">Phasellus a ipsum id magna venenatis sollicitudin id non justo. Orci varius natoque
-                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus at elementum mi. Curabitur
-                vitae ipsum tortor. Curabitur sit amet felis velit. Quisque a placerat neque.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <br><br>
+    <%- include('ejs/partials/sectionIntro', {title: "Hello!", introText: "I hope you have a reason to smile today :)"}); %>
+    <div class="center">
+      <img style="height: 40vh; padding: 4px;" src="/images/mary.jpg" alt="Oh no! If you're seeing this text you're not seeing my photo with an alpaca!">
     </div>
   </main>
 
