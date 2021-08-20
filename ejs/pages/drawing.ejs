@@ -12,6 +12,7 @@
     <div class="row">
       <% drawings.forEach(function(category) { %>
         <h5 class="center"><%= category.medium %></h5>
+        <hr style="width: 65%;">
         <div class="row center">
           <% category.images.forEach(function(imageName) { %>
             <a href=<%= '/' + category.baseDir + imageName %> target="_blank">

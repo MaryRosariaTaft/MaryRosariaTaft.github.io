@@ -13,6 +13,7 @@
     <div class="container">
       <div class="section">
         <!-- TODO: refactor this block as needed after updating the `videoCard` partial -->
+        <!-- also todo: separate videos by era (Baroque, Classical, etc.) -->
         <div class="row center">
           <% pianoVideos.forEach(function(video) { %>
             <%- include('ejs/partials/videoCard', {title: video.title, src: video.embedLink}); %>

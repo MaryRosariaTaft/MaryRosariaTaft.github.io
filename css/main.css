@@ -42,6 +42,10 @@ html {
   font-family: 'Libre Baskerville', serif;
 }
 
+nav .brand-logo.hide-on-large-only {
+  font-size: 1.6rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Libre Baskerville', serif;
 }
