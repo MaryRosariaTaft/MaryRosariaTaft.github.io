@@ -8,7 +8,21 @@
   <%- include('ejs/partials/header', {title: DRAWING}); %>
 
   <main>
-    <%- include('ejs/partials/sectionIntro', {title: DRAWING, icon: "brush"}); %>
+    <%- include('ejs/partials/sectionIntro', {title: DRAWING, introText: ""}); %>
+    <br>
+    <div class="row">
+      <% drawings.forEach(function(category) { %>
+        <h5 class="center"><%= category.medium %></h5>
+        <div class="row center">
+          <% category.images.forEach(function(imageName) { %>
+            <a href=<%= '/' + category.baseDir + imageName %> target="_blank">
+              <img style="height: 40vh; padding: 4px;" src=<%= category.baseDir + imageName %> alt=<%= imageName %>>
+            </a>
+          <% }); %>
+        </div>
+        <br>
+      <% }); %>
+    </div>
   </main>
 
   <%- include('ejs/partials/footer'); %>

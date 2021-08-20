@@ -8,12 +8,12 @@
   <%- include('ejs/partials/header', {title: PIANO}); %>
 
   <main>
-    <%- include('ejs/partials/sectionIntro', {title: PIANO, icon: "piano"}); %>
+    <%- include('ejs/partials/sectionIntro', {title: PIANO, introText: "I started playing piano in 2007 as physical therapy after breaking and dislocating my thumb!"}); %>
 
     <div class="container">
       <div class="section">
         <!-- TODO: refactor this block as needed after updating the `videoCard` partial -->
-        <div class="row">
+        <div class="row center">
           <% pianoVideos.forEach(function(video) { %>
             <%- include('ejs/partials/videoCard', {title: video.title, src: video.embedLink}); %>
           <% }); %>

@@ -103,5 +103,58 @@
       "title": "Rie y Llora",
       "embedLink": "https://www.youtube-nocookie.com/embed/yMYIYsKbLLg"
     }
+  ],
+  "drawings": [
+    {
+      "medium": "Acrylic",
+      "baseDir": "images/acrylic/",
+      "images": [
+        "korok.jpg",
+        "saffron.jpg",
+        "autumn-woods.jpg"
+      ]
+    },
+    {
+      "medium": "Charcoal",
+      "baseDir": "images/charcoal/",
+      "images": [
+        "annie.jpg",
+        "armin.jpg",
+        "baseball.jpg"
+      ]
+    },
+    {
+      "medium": "Digital",
+      "baseDir": "images/digital/",
+      "images": [
+        "kakyoin-giorno.jpg",
+        "a.jpg",
+        "shroomish.jpg",
+        "ba.jpg",
+        "j.jpg",
+        "link.jpg",
+        "rohan-yukako.jpg"
+      ]
+    },
+    {
+      "medium": "Pen and Pencil",
+      "baseDir": "images/pen-and-pencil/",
+      "images": [
+        "poro.jpg",
+        "inner-ear.jpg",
+        "ham-radio.jpg",
+        "ballroom-shoe.jpg",
+        "eye.jpg"
+      ]
+    },
+    {
+      "medium": "Watercolor",
+      "baseDir": "images/watercolor/",
+      "images": [
+        "chickadee.jpg",
+        "blue-jay.jpg",
+        "watermelon-cat.jpg"
+      ]
+    }
   ]
 }
