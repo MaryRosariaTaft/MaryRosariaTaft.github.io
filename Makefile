@@ -22,12 +22,3 @@ drawing:
 
 clean:
 	rm -f index.html piano.html ballroom.html drawing.html contact.html
-
-test: clean-test
-	ejs ejs/pages/test-page.ejs -f ejs/data/test-data.json -o test.html
-	-tidy -config .tidyrc -o test.html test.html
-
-clean-test:
-	rm -f test.html
-
-clean-all: clean clean-test

@@ -1,7 +1,5 @@
 /* Custom Stylesheet */
 
-/* TODO, maybe: actually use the 'materialize.css' and do all customization here.. unlike my initial attempt at styling */
-
 /* ICONS */
 
 .icon-block {
@@ -10,10 +8,6 @@
 
 .icon-block .material-icons {
   font-size: inherit;
-}
-
-.icon-test {
-  height: 1px;
 }
 
 .icon-square {
