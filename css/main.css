@@ -51,6 +51,49 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* COLORS */
+
+.rose {
+  background-color: #FDC2ED !important;
+}
+
+.rose-text {
+  color: #FDC2ED !important;
+}
+
+.rose.darken {
+  background-color: #B076A0 !important;
+}
+
+.rose-text.darken {
+  color: #B076A0 !important;
+}
+
+.mint.lighten {
+  background-color: #A9FCFC !important;
+}
+
+.mint-text.lighten {
+  color: #A9FCFC !important;
+}
+
+.mint {
+  background-color: #7FB0B0 !important;
+}
+
+.mint-text {
+  color: #7FB0B0 !important;
+}
+
+.cheese {
+  background-color: #FCF7DC !important;
+}
+
+.cheese-text {
+  color: #FCF7DC !important;
+}
+
+
 /* GENERAL */
 
 body {
@@ -61,4 +104,11 @@ body {
 
 main {
   flex: 1 0 auto;
+}
+
+
+/* FOOTER */
+
+.page-footer .footer-copyright {
+  min-height: 0px;
 }
