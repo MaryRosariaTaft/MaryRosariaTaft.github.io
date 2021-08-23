@@ -8,12 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:image" content="images/chickadee.jpg">
   <title>Contact | Mary R. Taft</title>
-  <script>
-      // TODO: make dark-theme persistent across pages lol, and ideally across sessions (localStorage/cookies)
-      function toggleDarkMode() {
-        document.body.classList.toggle('dark-theme');  
-      }
-  </script>
   <link href=
   "https://fonts.googleapis.com/css2?family=Libre+Baskerville&amp;family=Montserrat:wght@300&amp;display=swap"
   rel="stylesheet">
@@ -32,7 +26,7 @@
         </div>
         <ul class="right hide-on-med-and-down">
           <li><i class="material-icons" style="margin-left: 10px; cursor: pointer;" onclick=
-          "toggleDarkMode()">brightness_4</i></li>
+          "toggleDarkTheme()">brightness_4</i></li>
         </ul>
         <ul class="right hide-on-med-and-down">
           <li class="active">
@@ -60,15 +54,24 @@
           </li>
         </ul>
         <ul id="nav-mobile" class="sidenav">
-          <li> <a class="" href="/">Home</a>
+          <li>
+            <a class="" href="/">Home</a>
           </li>
-          <li> <a class="" href="/piano">Piano</a>
+          <li>
+            <a class="" href="/piano">Piano</a>
           </li>
-          <li> <a class="" href="/ballroom">Ballroom</a>
+          <li>
+            <a class="" href="/ballroom">Ballroom</a>
           </li>
-          <li> <a class="" href="/drawing">Drawing</a>
+          <li>
+            <a class="" href="/drawing">Drawing</a>
           </li>
-          <li> <a class="active" href="/contact">Contact</a>
+          <li>
+            <a class="active" href="/contact">Contact</a>
+          </li>
+          <li>
+            <a style="margin-top: 20px; cursor: pointer;" onclick="toggleDarkTheme()"><i class=
+            "material-icons" style="color: #C5C5C5;">brightness_4</i></a>
           </li>
         </ul><a href="/" data-target="nav-mobile" class="sidenav-trigger"><i class=
         "material-icons">menu</i></a>
@@ -98,6 +101,7 @@
   </footer>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
   <script src="js/materialize.js"></script> 
-  <script src="js/initSidenav.js"></script>
+  <script src="js/initSidenav.js"></script> 
+  <script src="js/toggleDarkTheme.js"></script>
 </body>
 </html>

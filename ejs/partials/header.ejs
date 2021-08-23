@@ -4,10 +4,11 @@
         <a id="logo-container-desktop" href="/" class="brand-logo hide-on-med-and-down"><%= NAME %></a>
         <div id="logo-container-mobile" class="brand-logo hide-on-large-only"><%= NAME %></div>
 
+        <!-- TODO: make the dark theme toggle its own partial, probably -->
         <ul class="right hide-on-med-and-down">
           <li>
             <!-- TODO: move CSS out of this component, probably -->
-            <i class="material-icons" style="margin-left: 10px; cursor: pointer;" onclick="toggleDarkMode()">brightness_4</i>
+            <i class="material-icons" style="margin-left: 10px; cursor: pointer;" onclick="toggleDarkTheme()">brightness_4</i>
           </li>
         </ul>
 
@@ -24,13 +25,17 @@
         <ul id="nav-mobile" class="sidenav">
           <% pageTitles.forEach(function(pageTitle) { %>
             <li>
-              <!-- TODO: replace "mint-text" with "active" and update CSS accordingly -->
               <a class="<%= title === pageTitle ? 'active' : '' %>"
                  href="<%= pageTitle === HOME ? '/' : '/' + pageTitle.toLowerCase() %>">
                 <%= pageTitle %>
               </a>
             </li>
           <% }); %>
+          <li>
+            <a style="margin-top: 20px; cursor: pointer;" onclick="toggleDarkTheme()">
+              <i class="material-icons" style="color: #C5C5C5;">brightness_4</i>
+            </a>
+          </li>
         </ul>
         <a href="/" data-target="nav-mobile" class="sidenav-trigger">
           <i class="material-icons">menu</i>
