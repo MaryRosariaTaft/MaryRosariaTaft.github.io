@@ -4,6 +4,13 @@
         <a id="logo-container-desktop" href="/" class="brand-logo hide-on-med-and-down"><%= NAME %></a>
         <div id="logo-container-mobile" class="brand-logo hide-on-large-only"><%= NAME %></div>
 
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <!-- TODO: move CSS out of this component, probably -->
+            <i class="material-icons" style="margin-left: 10px; cursor: pointer;" onclick="toggleDarkMode()">brightness_4</i>
+          </li>
+        </ul>
+
         <% pageTitles.slice().reverse().forEach(function(pageTitle) { %>
           <ul class="right hide-on-med-and-down">
             <li class="<%= title === pageTitle ? 'active' : '' %>">
@@ -18,7 +25,7 @@
           <% pageTitles.forEach(function(pageTitle) { %>
             <li>
               <!-- TODO: replace "mint-text" with "active" and update CSS accordingly -->
-              <a class="<%= title === pageTitle ? 'mint-text' : '' %>"
+              <a class="<%= title === pageTitle ? 'active' : '' %>"
                  href="<%= pageTitle === HOME ? '/' : '/' + pageTitle.toLowerCase() %>">
                 <%= pageTitle %>
               </a>

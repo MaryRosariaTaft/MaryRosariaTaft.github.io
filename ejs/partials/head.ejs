@@ -9,6 +9,13 @@
         <%= title %> | <%= NAME %>
     </title>
 
+    <script>
+      // TODO: make dark-theme persistent across pages lol, and ideally across sessions (localStorage/cookies)
+      function toggleDarkMode() {
+        document.body.classList.toggle('dark-theme');
+      }
+    </script>
+
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&amp;family=Montserrat:wght@300&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/maryterialize.css" type="text/css" rel="stylesheet" media="screen,projection" />

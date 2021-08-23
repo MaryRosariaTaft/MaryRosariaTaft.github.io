@@ -54,11 +54,11 @@ h1, h2, h3, h4, h5, h6 {
 /* COLORS */
 
 .rose {
-  background-color: #FDC2ED !important;
+  background-color: #FFB7DA !important;
 }
 
 .rose-text {
-  color: #FDC2ED !important;
+  color: #FFB7DA !important;
 }
 
 .rose.darken {
@@ -94,6 +94,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* TODO: use CSS variables for... everything in the following two sections */
+
 /* GENERAL */
 
 body {
@@ -106,39 +108,35 @@ main {
   flex: 1 0 auto;
 }
 
-/* TODO: use CSS variables intead of repeating the HEX for mint-text here */
 h4 {
   color: #7FB0B0 !important;
 }
 
-/*todo: same here for rose, use CSS var*/
 footer {
-  background-color: #FDC2ED !important;
+  background-color: #FFB7DA !important;
 }
 nav {
-  background-color: #FDC2ED !important;
+  background-color: #FFB7DA !important;
 }
 
 nav ul li.active {
   background-color: #7FB0B0 !important;
 }
 
+.sidenav li a.active {
+  color: #7FB0B0 !important;
+}
+
 
 /* DARK THEME */
 
-/* NOTE: to use this, we need <body class="dark-theme">. */
-/* TODO: add a color scheme toggle somewhere in the header probably */
-
 body.dark-theme {
-  /* TODO: use hex, b/c why not */
-  background-color: rgb(30, 30, 30);
-  color: rgb(197, 197, 197);
+  background-color: #1E1E1E;
+  color: #C5C5C5;
 }
 
-/* TODO: use CSS variables for... everything in this dark-theme section */
-
 body.dark-theme h4 {
-  color: #f5a4df !important;
+  color: #FFB7DA !important;
 }
 
 body.dark-theme footer {
@@ -149,20 +147,22 @@ body.dark-theme nav {
 }
 
 body.dark-theme nav ul li.active {
-  /* TODO: use the following color for rose.darken, probably. i like the way it looks better */
-  /* frankly i really like the current pink on the default light theme.. but play around with this shade, too, or something similar. might be more readable */
-  background-color: #f5a4df !important;
+  background-color: #FFB7DA !important;
 } 
 
 body.dark-theme .sidenav {
-  background-color: rgb(30, 30, 30);
+  background-color: #1E1E1E;
 }
 body.dark-theme .sidenav li a {
-  color: rgb(197, 197, 197);
+  color: #C5C5C5;
+}
+
+body.dark-theme .sidenav li a.active {
+  color: #FFB7DA !important;
 }
 
 body.dark-theme .sidenav li>a:hover {
-  background-color: rgb(50, 50, 50);
+  background-color: #323232;
 }
 
 
