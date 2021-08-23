@@ -1,5 +1,6 @@
 /* Custom Stylesheet */
 
+
 /* ICONS */
 
 .icon-block {
@@ -47,48 +48,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* COLORS */
 
-.rose {
-  background-color: #FFB7DA !important;
+:root {
+  --rose: #FFB7DA;
+  --mint: #7FB0B0;
+  --dark-gray: #1E1E1E;
+  --medium-dark-gray: #323232;
+  --light-gray: #C5C5C5;
 }
 
-.rose-text {
-  color: #FFB7DA !important;
-}
-
-.rose.darken {
-  background-color: #B076A0 !important;
-}
-
-.rose-text.darken {
-  color: #B076A0 !important;
-}
-
-.mint.lighten {
-  background-color: #A9FCFC !important;
-}
-
-.mint-text.lighten {
-  color: #A9FCFC !important;
-}
-
-.mint {
-  background-color: #7FB0B0 !important;
-}
-
-.mint-text {
-  color: #7FB0B0 !important;
-}
-
-.cheese {
-  background-color: #FCF7DC !important;
-}
-
-.cheese-text {
-  color: #FCF7DC !important;
-}
-
-
-/* TODO: use CSS variables for... everything in the following two sections */
 
 /* GENERAL */
 
@@ -103,62 +70,72 @@ main {
 }
 
 h4 {
-  color: #7FB0B0 !important;
+  color: var(--mint);
 }
 
-footer {
-  background-color: #FFB7DA !important;
+footer.page-footer {
+  background-color: var(--rose);
 }
+
 nav {
-  background-color: #FFB7DA !important;
+  background-color: var(--rose);
 }
 
 nav ul li.active {
-  background-color: #7FB0B0 !important;
+  background-color: var(--mint);
 }
 
 .sidenav li a.active {
-  color: #7FB0B0 !important;
+  color: var(--mint);
+}
+
+.sidenav li a.theme-toggle:hover {
+  background-color: white;
 }
 
 
 /* DARK THEME */
 
 body.dark-theme {
-  background-color: #1E1E1E;
-  color: #C5C5C5;
+  background-color: var(--dark-gray);
+  color: var(--light-gray);
 }
 
 body.dark-theme h4 {
-  color: #FFB7DA !important;
+  color: var(--rose);
 }
 
-body.dark-theme footer {
-  background-color: #7FB0B0 !important;
+body.dark-theme footer.page-footer {
+  background-color: var(--mint);
 }
+
 body.dark-theme nav {
-  background-color: #7FB0B0 !important;
+  background-color: var(--mint);
 }
 
 body.dark-theme nav ul li.active {
-  background-color: #FFB7DA !important;
+  background-color: var(--rose);
 } 
 
 body.dark-theme .sidenav {
-  background-color: #1E1E1E;
+  background-color: var(--dark-gray)
 }
+
 body.dark-theme .sidenav li a {
-  color: #C5C5C5;
+  color: var(--light-gray)
 }
 
 body.dark-theme .sidenav li a.active {
-  color: #FFB7DA !important;
+  color: var(--rose);
 }
 
-body.dark-theme .sidenav li>a:hover {
-  background-color: #323232;
+body.dark-theme .sidenav li a:hover {
+  background-color: var(--medium-dark-gray);
 }
 
+body.dark-theme .sidenav li a.theme-toggle:hover {
+  background-color: var(--dark-gray);
+}
 
 /* TODO: add a high-contrast theme too */
 
