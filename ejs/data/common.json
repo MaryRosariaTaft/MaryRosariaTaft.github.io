@@ -63,11 +63,11 @@
     },
     {
       "title": "French Suite No. 5 in G Major, BWV 816 by J.S. Bach",
-      "embedLink": "https://www.youtube-nocookie.com/embed/1_zktaO1rIg"
+      "embedLink": "https://www.youtube-nocookie.com/embed/1_zktaO1rIg?start=20"
     },
     {
       "title": "Papillons, Op. 2 by Robert Schumann",
-      "embedLink": "https://www.youtube-nocookie.com/embed/xAdWWYOlm9I"
+      "embedLink": "https://www.youtube-nocookie.com/embed/xAdWWYOlm9I?start=16"
     },
     {
       "title": "\"Tempest\" Sonata in D Minor, Op. 31, No. 2, Mvt. III by Ludwig van Beethoven",
@@ -75,7 +75,11 @@
     },
     {
       "title": "Italian Concerto in F Minor, BWV 971, Mvt. II by J.S. Bach",
-      "embedLink": "https://www.youtube-nocookie.com/embed/qHFMU6tg32E"
+      "embedLink": "https://www.youtube-nocookie.com/embed/qHFMU6tg32E?start=31"
+    },
+    {
+      "title": "Sonatina in D Major, Op. 137, No. 1, Mvts. 2 & 1 by Franz Schubert",
+      "embedLink": "https://www.youtube-nocookie.com/embed/0b5EbC6wYj8?start=60"
     }
   ],
   "ballroomVideos": [
