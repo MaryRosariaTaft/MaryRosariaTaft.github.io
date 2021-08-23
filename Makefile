@@ -10,6 +10,11 @@ build: clean
 	tidy -config .tidyrc -o drawing.html drawing.html
 	tidy -config .tidyrc -o contact.html contact.html
 
+drawing:
+	rm drawing.html
+	ejs ejs/pages/drawing.ejs -f ejs/data/common.json -o drawing.html
+	tidy -config .tidyrc -o drawing.html drawing.html
+
 clean:
 	rm -f index.html piano.html ballroom.html drawing.html contact.html
 
