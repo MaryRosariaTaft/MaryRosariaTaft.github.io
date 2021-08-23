@@ -8,10 +8,10 @@
   <%- include('ejs/partials/header', {title: DRAWING}); %>
 
   <main>
-    <%- include('ejs/partials/sectionIntro', {title: DRAWING, introText: ""}); %>
+    <%- include('ejs/partials/sectionIntro', {title: DRAWING, introText: "DAGA KOTOWARU"}); %>
     <div class="row">
       <% drawings.forEach(function(category) { %>
-        <h5 class="center"><%= category.medium %></h5>
+        <h5 class="center" style="padding-top:2vh"><%= category.medium %></h5>
         <hr style="width: 45%;">
         <div class="row center">
           <% category.images.forEach(function(imageName) { %>
@@ -20,7 +20,6 @@
             </a>
           <% }); %>
         </div>
-        <br>
       <% }); %>
     </div>
   </main>
