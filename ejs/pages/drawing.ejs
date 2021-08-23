@@ -10,12 +10,14 @@
   <main>
     <%- include('ejs/partials/sectionIntro', {title: DRAWING, introText: "DAGA KOTOWARU"}); %>
     <div class="row">
+      <!-- TODO: use partials for the following block -->
       <% drawings.forEach(function(category) { %>
         <h5 class="center" style="padding-top:2vh"><%= category.medium %></h5>
         <hr style="width: 45%;">
         <div class="row center">
           <% category.images.forEach(function(imageName) { %>
             <a href=<%= '/' + category.baseDir + imageName %> target="_blank">
+              <!-- TODO: move styling out of here and into CSS -->
               <img style="max-height: 40vh; max-width: 100%; height: auto; width: auto; padding: 4px;" src=<%= category.baseDir + imageName %> alt=<%= imageName %>>
             </a>
           <% }); %>

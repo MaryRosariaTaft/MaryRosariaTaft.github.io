@@ -1,12 +1,12 @@
 <header>
-    <nav class="rose" role="navigation">
+    <nav role="navigation">
       <div class="nav-wrapper container">
         <a id="logo-container-desktop" href="/" class="brand-logo hide-on-med-and-down"><%= NAME %></a>
         <div id="logo-container-mobile" class="brand-logo hide-on-large-only"><%= NAME %></div>
 
         <% pageTitles.slice().reverse().forEach(function(pageTitle) { %>
           <ul class="right hide-on-med-and-down">
-            <li class="<%= title === pageTitle ? 'mint' : '' %>">
+            <li class="<%= title === pageTitle ? 'active' : '' %>">
               <a href="<%= pageTitle === HOME ? '/' : '/' + pageTitle.toLowerCase() %>">
                 <%= pageTitle %>
               </a>
@@ -17,6 +17,7 @@
         <ul id="nav-mobile" class="sidenav">
           <% pageTitles.forEach(function(pageTitle) { %>
             <li>
+              <!-- TODO: replace "mint-text" with "active" and update CSS accordingly -->
               <a class="<%= title === pageTitle ? 'mint-text' : '' %>"
                  href="<%= pageTitle === HOME ? '/' : '/' + pageTitle.toLowerCase() %>">
                 <%= pageTitle %>

@@ -106,6 +106,68 @@ main {
   flex: 1 0 auto;
 }
 
+/* TODO: use CSS variables intead of repeating the HEX for mint-text here */
+h4 {
+  color: #7FB0B0 !important;
+}
+
+/*todo: same here for rose, use CSS var*/
+footer {
+  background-color: #FDC2ED !important;
+}
+nav {
+  background-color: #FDC2ED !important;
+}
+
+nav ul li.active {
+  background-color: #7FB0B0 !important;
+}
+
+
+/* DARK THEME */
+
+/* NOTE: to use this, we need <body class="dark-theme">. */
+/* TODO: add a color scheme toggle somewhere in the header probably */
+
+body.dark-theme {
+  /* TODO: use hex, b/c why not */
+  background-color: rgb(30, 30, 30);
+  color: rgb(197, 197, 197);
+}
+
+/* TODO: use CSS variables for... everything in this dark-theme section */
+
+body.dark-theme h4 {
+  color: #f5a4df !important;
+}
+
+body.dark-theme footer {
+  background-color: #7FB0B0 !important;
+}
+body.dark-theme nav {
+  background-color: #7FB0B0 !important;
+}
+
+body.dark-theme nav ul li.active {
+  /* TODO: use the following color for rose.darken, probably. i like the way it looks better */
+  /* frankly i really like the current pink on the default light theme.. but play around with this shade, too, or something similar. might be more readable */
+  background-color: #f5a4df !important;
+} 
+
+body.dark-theme .sidenav {
+  background-color: rgb(30, 30, 30);
+}
+body.dark-theme .sidenav li a {
+  color: rgb(197, 197, 197);
+}
+
+body.dark-theme .sidenav li>a:hover {
+  background-color: rgb(50, 50, 50);
+}
+
+
+/* TODO: add a high-contrast theme too */
+
 
 /* FOOTER */
 
