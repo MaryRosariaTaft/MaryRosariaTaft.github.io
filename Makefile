@@ -15,6 +15,11 @@ piano:
 	ejs ejs/pages/piano.ejs -f ejs/data/common.json -o piano.html
 	tidy -config .tidyrc -o piano.html piano.html
 
+ballroom:
+	rm ballroom.html
+	ejs ejs/pages/ballroom.ejs -f ejs/data/common.json -o ballroom.html
+	tidy -config .tidyrc -o ballroom.html ballroom.html
+
 drawing:
 	rm drawing.html
 	ejs ejs/pages/drawing.ejs -f ejs/data/common.json -o drawing.html
