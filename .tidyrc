@@ -1,6 +1,8 @@
 // See full set of configuration options here:
 // https://api.html-tidy.org/tidy/quickref_5.8.0.html
 
+drop-empty-elements: no
+
 hide-comments: yes
 
 break-before-br: yes
