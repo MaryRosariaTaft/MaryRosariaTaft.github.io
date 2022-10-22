@@ -8,7 +8,7 @@
   <%- include('ejs/partials/header', {title: DRAWING}); %>
 
   <main>
-    <%- include('ejs/partials/sectionIntro', {title: DRAWING, introText: "DAGA KOTOWARU"}); %>
+    <%- include('ejs/partials/sectionIntro', {title: DRAWING}); %>
     <div class="row">
       <!-- TODO: use partials for the following block -->
       <% drawings.forEach(function(category) { %>
@@ -26,7 +26,7 @@
     </div>
   </main>
 
-  <%- include('ejs/partials/footer'); %>
+  <%- include('ejs/partials/footer', {flavorText: "In the words of Bob Ross: Happy painting, and God bless!"}); %>
   <%- include('ejs/partials/scripts'); %>
 
 </body>
