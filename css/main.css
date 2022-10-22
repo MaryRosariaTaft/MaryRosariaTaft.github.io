@@ -74,7 +74,18 @@ h4 {
 }
 
 footer.page-footer {
+  background-color: white;
+}
+
+footer.page-footer .footer-copyright {
   background-color: var(--rose);
+}
+
+footer.page-footer>div.container {
+  font-size: 0.8em;
+  padding-bottom: 0.5rem;
+  color: var(--dark-gray);
+  background-color: white;
 }
 
 nav {
@@ -106,7 +117,16 @@ body.dark-theme h4 {
 }
 
 body.dark-theme footer.page-footer {
+  background-color: var(--dark-gray);
+}
+
+body.dark-theme footer.page-footer .footer-copyright {
   background-color: var(--mint);
+}
+
+body.dark-theme footer.page-footer>div.container {
+  color: var(--light-gray);
+  background-color: var(--dark-gray);
 }
 
 body.dark-theme nav {
@@ -115,7 +135,7 @@ body.dark-theme nav {
 
 body.dark-theme nav ul li.active {
   background-color: var(--rose);
-} 
+}
 
 body.dark-theme .sidenav {
   background-color: var(--dark-gray)
