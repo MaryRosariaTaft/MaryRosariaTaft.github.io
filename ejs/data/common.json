@@ -113,51 +113,60 @@
       "medium": "Acrylic",
       "baseDir": "images/acrylic/",
       "images": [
-        "korok.jpg",
-        "saffron.jpg",
-        "autumn-woods.jpg"
+        {
+          "title": "Autumn Woods",
+          "alt": "Colorful painting of a forest path in Autumn",
+          "thumbnailId": "1c7Md4ZCOFiT-WSI6Kj0Vp0mhDZYBm7Gw",
+          "driveId": "1c7Md4ZCOFiT-WSI6Kj0Vp0mhDZYBm7Gw"
+        }
       ]
     },
     {
       "medium": "Charcoal",
       "baseDir": "images/charcoal/",
       "images": [
-        "annie.jpg",
-        "armin.jpg",
-        "baseball.jpg"
+        {
+          "title": "Baseball",
+          "alt": "Charcoal drawing of a baseball pitcher pitching a ball to a batter",
+          "thumbnailId": "1U9RJjkCAcyHHH16HTsoBQpsu-y8-aMaw",
+          "driveId": "1U9RJjkCAcyHHH16HTsoBQpsu-y8-aMaw"
+        }
       ]
     },
     {
       "medium": "Digital",
       "baseDir": "images/digital/",
       "images": [
-        "kakyoin-giorno.jpg",
-        "a.jpg",
-        "shroomish.jpg",
-        "ba.jpg",
-        "j.jpg",
-        "rohan-yukako.jpg",
-        "link.jpg"
+        {
+          "title": "Giorno and Kakyoin",
+          "alt": "Illustration of chibi JoJo's Bizarre Adventure characters",
+          "thumbnailId": "1r8X-CjaV_xfQkAuL76QvZ_TVR6SEBh20",
+          "driveId": "1r8X-CjaV_xfQkAuL76QvZ_TVR6SEBh20"
+        }
       ]
     },
     {
       "medium": "Pen and Pencil",
       "baseDir": "images/pen-and-pencil/",
       "images": [
-        "poro.jpg",
-        "inner-ear.jpg",
-        "ham-radio.jpg",
-        "ballroom-shoe.jpg",
-        "eye.jpg"
+        {
+          "title": "Poro",
+          "alt": "An ink drawing of Poro wearing a beanie",
+          "thumbnailId": "1W8FZI-8YuXyGem5zVoHXC0Ya8ghyeGVn",
+          "driveId": "1W8FZI-8YuXyGem5zVoHXC0Ya8ghyeGVn"
+        }
       ]
     },
     {
       "medium": "Watercolor",
       "baseDir": "images/watercolor/",
       "images": [
-        "chickadee.jpg",
-        "blue-jay.jpg",
-        "watermelon-cat.jpg"
+        {
+          "title": "Chickadee",
+          "alt": "Watercolor painting of a chickadee",
+          "thumbnailId": "12UFbcitSz2JWOIdSdddmFHio25oJsMut",
+          "driveId": "12UFbcitSz2JWOIdSdddmFHio25oJsMut"
+        }
       ]
     }
   ]
