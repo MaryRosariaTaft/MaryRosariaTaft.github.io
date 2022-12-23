@@ -104,6 +104,70 @@ nav ul li.active {
   background-color: white;
 }
 
+div.thumbnail {
+  display: inline-block;
+}
+
+div.thumbnail img {
+  max-height: 40vh;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  padding: 4px;
+}
+
+div.spoiler {
+  display: inline-block;
+	overflow: hidden;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+div.spoiler img {
+	vertical-align: bottom;
+	filter: blur(20px) grayscale(100%);
+	transition: 0.3s;
+
+  max-height: 40vh;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  padding: 4px;
+}
+
+.spoiler-button {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 4rem;
+	line-height: 1.8rem;
+	width: 11rem;
+	padding: 0 1rem;
+	font-size: 1rem;
+	margin: auto;
+	background-color: rgba(0,0,0,0.8);
+	color: #FFF;
+	text-align: center;
+	border-radius: 1rem;
+	cursor: pointer;
+}
+
+div.spoiler input {
+	width: 0;
+	height: 0;
+}
+
+div.spoiler input:checked ~ img {
+	filter: none;
+}
+
+div.spoiler input:checked, div.spoiler input:checked ~ label {
+	display: none;
+}
+
 
 /* DARK THEME */
 

@@ -16,11 +16,18 @@
         <hr style="width: 45%;">
         <div class="row center">
           <% category.images.forEach(function(image) { %>
-            <% if (!image.isHidden) { %>
-              <a href=<%= 'https://drive.google.com/file/d/' + image.photoId + '/view' %> target="_blank">
-                <!-- TODO: move styling out of here and into CSS -->
-                <img style="max-height: 40vh; max-width: 100%; height: auto; width: auto; padding: 4px;" src=<%= 'https://drive.google.com/uc?export=view&id=' + image.thumbnailId %> alt="<%= image.title %>">
-              </a>
+            <% if (!image.isHidden && image.spoilerText && image.spoilerText !== "") { %>
+              <div class="spoiler">
+                <input id="spoiler-<%= image.title.replace(/ /g,"-") %>" type="checkbox">
+                <img src=<%= 'https://drive.google.com/uc?export=view&id=' + image.thumbnailId %> alt="<%= image.title %>">
+                <label for="spoiler-<%= image.title.replace(/ /g,"-") %>" class="spoiler-button">Click to Reveal<br/>(<%= image.spoilerText %>)</label>
+              </div>
+            <% } else if (!image.isHidden) { %>
+              <div class="thumbnail">
+                <!-- <a href=<%= 'https://drive.google.com/file/d/' + image.photoId + '/view' %> target="_blank"> -->
+                  <img src=<%= 'https://drive.google.com/uc?export=view&id=' + image.thumbnailId %> alt="<%= image.title %>">
+                <!-- </a> -->
+              </div>
             <% } %>
           <% }); %>
         </div>
