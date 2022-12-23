@@ -16,9 +16,9 @@
         <hr style="width: 45%;">
         <div class="row center">
           <% category.images.forEach(function(image) { %>
-            <a href=<%= 'https://drive.google.com/file/d/' + image.driveId + '/view' %> target="_blank">
+            <a href=<%= 'https://drive.google.com/file/d/' + image.photoId + '/view' %> target="_blank">
               <!-- TODO: move styling out of here and into CSS -->
-              <img style="max-height: 40vh; max-width: 100%; height: auto; width: auto; padding: 4px;" src=<%= 'https://drive.google.com/uc?export=view&id=' + image.thumbnailId %> alt="<%= image.alt %>">
+              <img style="max-height: 40vh; max-width: 100%; height: auto; width: auto; padding: 4px;" src=<%= 'https://drive.google.com/uc?export=view&id=' + image.thumbnailId %> alt="<%= image.title %>">
             </a>
           <% }); %>
         </div>
